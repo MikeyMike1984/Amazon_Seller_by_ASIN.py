@@ -24,8 +24,8 @@ os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 # Constants
 ASINS = []  # Updated dynamically
 BASE_URL = "https://www.amazon.com/gp/aod/ajax/ref=dp_aod_NEW_mbc?asin={}"
-SEMAPHORE_LIMIT = 10
-BATCH_SIZE = 50
+SEMAPHORE_LIMIT = 3
+BATCH_SIZE = 10
 
 # Headers to mimic a real browser
 HEADERS = [
